@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Расписание ИС-25-3</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 34px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      padding: 18px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .day {
+      font-size: 22px;
+      margin-bottom: 14px;
+      color: #93c5fd;
+    }
+
+    .lesson {
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    .time {
+      font-weight: bold;
+      color: #f8fafc;
+      margin-bottom: 6px;
+    }
+
+    .subject {
+      font-size: 15px;
+      color: #e2e8f0;
+      line-height: 1.5;
+    }
+
+    .empty {
+      color: #94a3b8;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 28px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Расписание занятий</h1>
+    <div class="subtitle">2025–2026 оқу жылы · І ауысым · Топ ИС-25-3</div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="day">Понедельник</div>
+        <div class="lesson">
+          <div class="time">08:30–09:50</div>
+          <div class="subject">БӘД — Кушербаев А, 207 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">09:55–11:15</div>
+          <div class="subject">Химия — Тұрақова Г, 219 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">11:30–12:50</div>
+          <div class="subject">Шет тілі — Кошева Р, 108 каб / Айдарова А, кітапхана</div>
+        </div>
+        <div class="lesson">
+          <div class="time">12:55–14:15</div>
+          <div class="subject">Физика — Дәуітова Н, 211 каб</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="day">Вторник</div>
+        <div class="lesson">
+          <div class="time">08:30–09:50</div>
+          <div class="subject">Информатика — Акбергенова А, 110 / Максадов Е, 109 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">09:55–11:15</div>
+          <div class="subject">Биология — Нуржанова А, 217 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">11:30–12:50</div>
+          <div class="subject">География — Айтмұханбетова Р, 216 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">12:55–14:15</div>
+          <div class="subject empty">Свободно</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="day">Среда</div>
+        <div class="lesson">
+          <div class="time">08:30–09:50</div>
+          <div class="subject">Математика — Тұрназарова А, 202 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">09:55–11:15</div>
+          <div class="subject">Графика және жобалау — Сатаева К, 214 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">11:30–12:50</div>
+          <div class="subject">Орыс тілі — Даукиева Г, 213 каб / Нұрмұханова А, 204 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">12:55–14:15</div>
+          <div class="subject">Дене тәрбиесі — Жиенбаев А</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="day">Четверг</div>
+        <div class="lesson">
+          <div class="time">08:30–09:50</div>
+          <div class="subject">Қазақ тілі — Боранқұлова Г, 114 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">09:55–11:15</div>
+          <div class="subject">Дене тәрбиесі — Жиенбаев А</div>
+        </div>
+        <div class="lesson">
+          <div class="time">11:30–12:50</div>
+          <div class="subject">Қазақстан тарихы — Жалгасова Қ, 205 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">12:55–14:15</div>
+          <div class="subject empty">Свободно</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="day">Пятница</div>
+        <div class="lesson">
+          <div class="time">08:30–09:50</div>
+          <div class="subject">Дүниежүзі тарихы — Бектемірова А, 202 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">09:55–11:15</div>
+          <div class="subject">Қазақ әдебиеті — Боранқұлова Г, 114 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">11:30–12:50</div>
+          <div class="subject">Физика — Дәуітова Н, 211 каб</div>
+        </div>
+        <div class="lesson">
+          <div class="time">12:55–14:15</div>
+          <div class="subject">Математика — Тұрназарова А, 202 каб</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>Сайт с расписанием для группы ИС-25-3</footer>
+  </div>
+</body>
+</html>
